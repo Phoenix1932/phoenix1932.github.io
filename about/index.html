@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="关于, zh-CN">
-    <meta name="description" content="Phoenix的博客">
+    <meta name="description" content="个人学习总结">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -30,7 +30,9 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Phoenix的博客" type="application/atom+xml">
+<meta name="generator" content="Hexo 6.0.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Phoenix的博客" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -146,7 +148,7 @@
         <div class="logo-name">Phoenix的博客</div>
         <div class="logo-desc">
             
-            Never really desperate, only the lost of the soul.
+            个人学习总结
             
         </div>
     </div>
@@ -306,12 +308,7 @@
     <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
-            <div class="title center-align">
-                
-                    subtitle
-                
-            </div>
-
+			<div style="width:200px"></div>
             <div class="description center-align">
                 
                 <span id="subtitle"></span>
@@ -520,7 +517,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12"]
+            data: ["2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01"]
         },
         yAxis: {
             type: 'value',
@@ -530,7 +527,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,2],
+                data: [0,0,0,0,0,0,0,0,0,0,0,2,0],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -660,6 +657,20 @@
                 
             </div>
         </div>
+		<div class="card"> 
+			<div class="card-content"> 
+				<div class="card-content article-card-content"> 
+					<div class="title center-align" data-aos="zoom-in-up"> 
+						<i class="fa fa-address-book"></i>&nbsp;&nbsp;myCV 
+					</div>
+					<div id="articleContent" data-aos="fade-up"> 
+						<p>正在修炼基本功的小鬼。</p>
+ 
+					</div> 
+				</div> 
+			</div>
+		</div>
+
     </div>
 </main>
 
@@ -672,7 +683,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2022-2021</span>
+                <span id="year">2022</span>
             
             <a href="/about" target="_blank">Phoenix</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
@@ -862,6 +873,23 @@ $(function () {
     
 
     
+	
+	<!-- 天气接口控件--> 
+	 
+	<script type="text/javascript"> 
+	WIDGET = {FID: '1tFpFZ5Mtj'} 
+</script> 
+<!-- <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script> --> 
+<script type="text/javascript"> 
+	//只在桌面版网页启用特效 
+	var windowWidth = $(window).width(); 
+	if (windowWidth > 768) { 
+		document.write('<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"><\/script>'); 
+	} 
+</script>
+ 
+	
+
 
     <!-- 雪花特效 -->
     
@@ -915,6 +943,10 @@ $(function () {
     
 
     
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
+    
 
     
 
@@ -923,5 +955,13 @@ $(function () {
     
 
 </body>
+<script type="text/javascript"> 
+	var OriginTitile = document.title, 
+		st; 
+	document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "这就走了？", clearTimeout(st)) : (document.title = "欢迎回来！", st = setTimeout(function () { 
+		document.title = OriginTitile }, 3e3)) 
+	}) 
+</script>
+
 
 </html>
